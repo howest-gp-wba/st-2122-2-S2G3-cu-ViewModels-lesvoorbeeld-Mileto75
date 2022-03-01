@@ -1,0 +1,23 @@
+﻿@model GamesGetGamesViewModel
+<h1>Our Games</h1>
+<table class="table table-responsive-md table-hover">
+	<tr>
+		<th>Title</th>
+		<th>Developer</th>
+		<th>Rating</th>
+	</tr>
+	@foreach(var game in Model.Games)
+	{
+		<tr>
+			<td>@game.Title</td>
+			<td>@game.Developer</td>
+			<td>@game.Rating</td>
+		</tr>
+	}
+</table>
+@foreach(var game in Model.Games)
+{
+	@game.Title
+}
+
+
